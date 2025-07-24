@@ -1,0 +1,115 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+
+form input[type="text"], form input[type="number"] {
+    min-width: 150px;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-around;
+    background: #f7f8fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+#sub-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sub-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-item:last-child {
+    border-bottom: none;
+}
+
+.sub-item.upcoming {
+    background-color: #fffbe6;
+    border-left: 4px solid #fadb14;
+}
+
+.sub-item .info {
+    flex-grow: 1;
+}
+
+.sub-item .info .name {
+    font-weight: bold;
+}
+
+.sub-item .info .date {
+    font-size: 0.8em;
+    color: #606770;
+}
+
+.sub-item .cost {
+    font-weight: bold;
+    color: #1d2129;
+    min-width: 80px;
+    text-align: right;
+}
+
+.sub-item .delete-btn {
+    background: #e4e6eb;
+    border: none;
+    color: #606770;
+    padding: 5px 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 15px;
+}

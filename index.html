@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧾 Subscription Tracker</h1>
+        <form id="sub-form">
+            <input type="text" id="sub-name" placeholder="Subscription Name (e.g., Netflix)" required>
+            <input type="number" id="sub-cost" placeholder="Monthly Cost (₹)" required>
+            <input type="date" id="sub-date" title="Next billing date" required>
+            <button type="submit">Add Subscription</button>
+        </form>
+        
+        <div class="totals">
+            <h3>Total Monthly: <span id="total-monthly">₹0.00</span></h3>
+            <h3>Total Annual: <span id="total-annual">₹0.00</span></h3>
+        </div>
+
+        <ul id="sub-list">
+            </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
